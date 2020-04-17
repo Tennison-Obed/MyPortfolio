@@ -1,0 +1,469 @@
+
+
+
+/**********
+/* Grille - 960.gs
+**********/
+.container_16 {
+	max-width: 960px;
+	width: 92%;
+	margin: 0 auto;
+}
+.grid_6,
+.grid_8,
+.grid_10,
+.grid_16 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.container_16 .grid_6 {
+	width:35.5%;
+}
+
+.container_16 .grid_8 {
+	width:48.0%;
+}
+
+.container_16 .grid_10 {
+	width:60.5%;
+}
+
+.container_16 .grid_16 {
+	width:98.0%;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+
+
+/**********
+/* Header
+**********/
+	header[role=banner] {
+		background:#eeeeee;
+		
+		padding: 19px 0;
+		overflow: hidden;
+		box-shadow: 3px 0px 3px 3px #00000070;
+
+	}
+	
+	header figure {
+		
+		border: 5px solid white;
+		border-left: 5px;
+		border-top: 5px;
+		
+		
+		height: 156px;
+		width: 156px;
+		box-shadow: 0 3px 3px 2px #00000070;
+	}
+header figure img {
+		
+		height: 150px;
+		position: relative;
+		width: 150px;
+		border: 10px solid #2b5b77;
+		border-right: 10px;
+		border-bottom: 10px;
+		
+	}
+	
+	header hgroup {
+		float: right;
+
+		text-align: right;			
+		padding:0px 0;
+	
+	}
+
+	@media (max-width: 600px) {
+  header figure {
+  	position: absolute; 
+
+             
+            top: 10%; 
+            left: 55%; 
+            margin-top: -100px; 
+            margin-left: -100px; 
+  display:block;
+  
+
+}
+header hgroup {
+		float: unset;
+		text-align: center;
+		padding-bottom: 70px;	
+			}
+			h2 {
+  line-height: 16px;
+  
+}
+.apropos {
+		margin-top: 40px;
+}
+
+			
+}
+.apropos, .competences, .experiences, .formations, .loisirs  {
+		
+		color: #2b5b77;
+	}
+.apropos,.contact{
+	color: #eeeeee;
+
+}
+	
+	
+	header hgroup h1 {
+		color: #2b5b77;
+		font-family:'DroidSansBold', Arial, sans-serif;
+		text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+		}
+	
+	header hgroup h2 {
+		color:#555;
+		
+		
+	}
+
+/************
+/* Contact
+************/
+	::-webkit-input-placeholder  { color:#fff; }
+	input:-moz-placeholder { color:#fff; }
+	.placeholder { color: #fff; }
+
+	.contactform {
+		background-color: #33a4c9;
+		color: #fff;
+		display: none;
+	}
+	
+	.contactform > div {
+		padding: 21px 0;
+	}
+	
+	.contactform input[type=text], .contactform input[type=email], .contactform textarea {
+		background: #2983a0;
+		border: 1px solid #226d85;
+		border-radius: 2px;
+		color: #fff;
+		max-width: 100%;
+		opacity: .7;
+		padding: 10px 10px 9px 10px;
+		margin-top: 0;
+		position: relative;
+		vertical-align: top;
+		width: 100%;
+	}
+	
+	.contactform input[type=text], .contactform input[type=email] {
+		margin-bottom: 21px;
+	}
+	
+	.contactform textarea {
+		font-family: 'DroidSansRegular', Arial, sans-serif;
+		font-size: 14px;
+		height: 148px;
+	}
+	
+	.contactform input[type=text]:focus, .contactform input[type=email]:focus, .contactform textarea:focus {
+		border: 1px solid #226d85;
+		opacity: 1;
+		outline: none;
+		-webkit-transition: opacity 1s;
+	}
+	
+	.contactform input[type=submit] {
+		background: #ff9f39;
+		border: 1px solid #ff9f39;
+		border-radius: 2px;
+		color: #fff;
+		cursor: pointer;
+		font-weight: bold;
+		font-size: 14px;
+		margin: 0;
+		padding: 10px 10px 9px 10px;
+		width: 100%;
+	}
+	
+	.contactform input.error, .contactform textarea.error {
+		border: 1px solid red;
+	}
+	
+	.contactform label.error {
+		display: none !important;
+	}
+
+	/***********************
+	/* Message du formulaire
+	***********************/
+		.messageform { 
+			display: none; /* Affiché via jQuery */ 
+			border-radius: 2px; 
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 17px;
+			padding:10px 10px 9px 10px; 
+			margin: 0;
+			text-align: center;
+			width: 100%; 
+		}
+		.envoi-valid, .envoi-error { 
+			display: inline-block; 
+		 }
+		.envoi-valid { 
+			background-color: #31D869;
+			border:1px solid #108D3A; 
+			color: #108D3A;
+		}
+		.envoi-error { 
+			background-color: #FF5839;
+			border:1px solid #A62913; 
+			color: #A62913;
+		}
+		.envoi-error a {
+			color: #A62913;
+			text-decoration: underline;
+		}
+		
+
+/***************
+/* Corps - Main
+***************/
+	section[role=main] {
+		padding: 21px 0;
+		overflow: hidden;
+	}
+	
+	section[role=main] > div {
+		margin-top: 63px;
+	}
+	
+	section[role=main] h3 {
+		border-bottom: 1px solid grey;
+		padding: 0 0 10px 60px;
+		margin-top: 0px;
+		position: relative;
+ 	}
+ 	h3{
+ 		
+ 		
+ 	}
+	
+	section[role=main] h3:after, h3:before {
+		content: ' ';
+		display: block;
+		height: 40px;
+		left: 0;
+		position: absolute;
+		top: -15px;
+		width: 40px;
+		border:5px solid grey ;
+		border-bottom:5px solid white;
+		border-right:5px solid white; 
+		box-shadow: 0px 0px 3px 1px #00000070;
+		
+	}
+	
+	section[role=main] h3:before {
+		background-color:#2b5b77;;
+		border-radius: px;
+	}
+	
+		/***************
+		/* Pictos titres
+		***************/
+		
+		section[role=main] h3:after {
+			background:url('bio/img/pictos-titre.png') no-repeat 11px 10px;
+		}
+		
+		section[role=main] .competences h3:after {
+			background-position: 11px -34px;
+		}
+	
+		section[role=main] .experiences h3:after {
+			background-position: 11px -86px;
+		}
+		
+		section[role=main] .formations h3:after {
+			background-position: 10px -139px;
+		}
+		
+		section[role=main] .loisirs h3:after {
+			background-position: 10px -250px;
+		}
+		
+		section[role=main] .contact h3:after {
+			background-position: 11px -194px;
+		}
+	
+	
+	.experiences ul, .formations ul {
+		margin-left: 10px;
+	}
+	
+	section[role=main] h4 {
+		margin-bottom: 0px;
+	}
+	
+	section[role=main] h4 strong {
+		color: grey;
+		font-weight: normal;
+	}
+	
+	.experiences li, .formations li {
+		margin-bottom: 40px;
+	}
+	
+	.experiences li:last-child, .formations li:last-child {
+		margin-bottom: 21px;
+	}
+	
+	.experiences li p, .formations li p {
+		margin-left: 30px;
+	}
+	
+	/**********************************************
+	/* Affichage des compétences sous forme de tags
+	**********************************************/
+	.competences .tags li {
+		background-color:#33a4c9;
+		border:1px solid #1b91b7;
+		border-radius: 15px;
+		color:#fff;
+		display: inline-block;
+		line-height: 13px;
+		margin: 0 7px 17px 0;
+		padding: 5px 10px;
+	}
+	
+	/************************************************
+	/* Affichage des compétences sous forme de barres
+	*************************************************/
+	.competences .barres li {
+		margin-bottom: 21px;
+		position: relative;
+		
+	}
+
+	
+	.competences .barres li:after {
+		background: #e1e1e1;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		position: absolute;
+		width:100%;
+	}
+	
+	.competences .barres li span {
+		background: #2b5b77;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		left: 0;
+		position: absolute;
+		width: inherit;
+		z-index: 1;
+		-moz-animation: html5 2s ease-out;
+    -webkit-animation: html5 2s ease-out;
+	}
+	.line{
+		width: 100%;height: 4px; background-color:#33a4c9;
+		-moz-animation: html5 2s ease-in-out;
+    -webkit-animation: html5 2s ease-in-out;
+
+	}
+	
+	@-moz-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+            };
+}
+
+	
+	/***********
+	/* Pictos
+	***********/
+	.lieu, .dates, .phone, .mail, .site, .form, .twitter, .facebook, .dribbble, .skype {
+		background: url('../img/pictos-gris.png') no-repeat;
+		padding-left: px;
+		margin: 0 10px 0px 5px;
+	}
+	
+	.lieu {
+		background-position: 0 -2px;
+		color: #999;
+	}
+	
+	.dates {
+		background-position: 0 -22px;
+		color: #999;
+	}
+	
+	.phone {
+		background-position: 0 -40px;
+	}
+	
+	.mail {
+		background-position: 0 -58px;
+	}
+	
+	.site {
+		background-position: 0 -80px;
+	}
+	
+	.form {
+		background-position: 0 -100px;
+	}
+	
+	.twitter {
+		background-position: 0 -122px;
+	}
+	
+	.facebook {
+		background-position: 0 -140px;
+	}
+	
+	.dribbble {
+		background-position: 0 -160px;
+	}
+	
+	.skype {
+		background-position: 0 -180px;
+	}

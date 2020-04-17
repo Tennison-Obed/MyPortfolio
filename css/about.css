@@ -1,0 +1,281 @@
+
+  body {
+  /* Check vertical-rythm 
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff 96%, #000000 100%);   
+  background-size:21px 21px;
+  background-position: 0 -2px; */
+  background: #f5f5f5;
+  color:#333;
+  font-family: 'DroidSansRegular', Arial, sans-serif;
+  font-size: 1
+  line-height: 21px;
+}
+
+.sidebar{
+	position: fixed;
+	background-color:;
+	height:100%;
+	width:70px;
+
+	z-index:4;
+	margin-left:0;
+}
+.new{
+position: fixed;
+top: 50%;
+left:20px;
+transform: translate(-50%, -50%);
+text-align:center;
+z-index:4;
+}
+.navbar-default a{
+
+float:center;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #f1f1f1;
+  margin: 5px;
+    
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #2b5b77;
+  overflow: hidden;
+  
+  border:0px  solid #b8c6cf;
+  border-right-width: 10px;
+  transition: all 0.2s ease-in-out 0s;
+  
+}
+
+.navbar-default i{
+  line-height: 50px;
+  font-size: 20px;
+  transition: 0.2s linear;
+
+}
+
+
+
+.navbar-default a:hover
+	{
+	border-color:#2b5b77;
+	}
+@media (max-width: 990px) {
+ .navbar-default a{
+ 	width: 40px;
+  	height: 40px;
+
+
+
+}
+.navbar-default i{
+  line-height: 40px;
+  font-size: 15px;
+
+}
+}
+
+.content {
+            position: absolute;
+            z-index:3;
+            width: 90%;
+            
+            margin-top: 20%;
+            margin-left: 5% ;
+            margin-right: 5%;
+            padding-bottom: 100px;
+            background-color: rgba(43, 91, 119, 0.3);
+        }
+            .content > section {
+                
+                width: auto;
+                height:;
+            }
+        #portfolio {
+            background:#2b5b77;
+          
+
+
+        }
+        
+                  
+                 }
+                 #portfolio.row{
+                  border-radius: 0px !important;
+                  padding-top: 100px;
+                 }
+        #about {
+            background-color: #eeeeee;
+        }
+        #contact {
+            background-color: #2b5b77;
+        }
+        #Achievments{
+        	background-color:#eeeeee;
+        }
+        #experience{
+          background-color: rgba(43, 91, 119, 0.3);
+        }
+        #skills
+        {
+          background-color: #eeeeee;
+        }
+ 
+
+            .navbar-default.navbar-shrink {
+                    padding: 10px 0;
+                }
+
+                .navbar-default a.active-square {
+                
+                border-color:#2b5b77;
+                
+                
+            }
+.cover-image{
+  opacity: 0.6;
+  text-align:center;background-image: url(images/cover.jpg); background-repeat:no-repeat;width:100%;height:10%;
+  position: fixed;
+
+}
+.c-btn{
+  display:inline-block;
+  
+}
+ ul {
+  list-style: none;
+}
+p, h1, h2, h3, h4 {
+margin: 15px 0; 
+}
+ section ul{
+margin: 21px 0; 
+}
+h1 {
+  font-size: 36px ;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 21px;
+}
+
+h4 {
+  font-size: 18px;
+
+  line-height:21px;
+}
+b,strong {
+  font-weight: bold;
+}
+        @media (max-width: 990px) {
+         p, h1, h2, h3, h4 {
+        margin: 15px 0; 
+        }
+         section ul{
+        margin: 21px 0; 
+        }
+        h1 {
+          font-size: 30px ;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        h3 {
+          font-size: 22px;
+          line-height: 18px;
+        }
+
+        h4 {
+          font-size: 14px;
+          line-height:21px;
+        }
+        b,strong {
+          font-weight: bold;
+        }
+
+        p{
+          font-size: 13px;
+        }}
+        
+ .profile-box{
+  
+  
+  margin-top: 2px;
+
+
+  
+}
+.profile-box-left{
+  float: left;
+  
+  width: 50%;
+  height: 100%;
+font-size: 18px;
+
+padding-left: 1px;
+padding: 2px;
+
+
+
+}
+.profile-box-right{
+  float: right;
+  
+  width: 50%;
+  height: 100%;
+  color: white;
+  padding-left: 1px; 
+  
+  padding: 2px;
+
+}
+.profile-box-left span{
+
+  background-color: #eeeeee;
+  color: #2b5b77;
+  padding: 2px;
+  border-radius: 4px;
+  border-radius-right:4px;
+}
+
+        @media (max-width: 720px){
+          .profile-box-left, .profile-box-right{
+font-size: 13px;
+width: 100%;
+}
+.content {
+            position: absolute;
+            z-index:3;
+            width: 80%;
+            
+            margin-top: 40%;
+            margin-left: 10% ;
+            margin-right: 10%;
+            
+        }
+
+      }
+section .experience {
+  
+   
+
+             
+            right:20%; 
+            left: 20%; 
+            margin-top: -100px; 
+            margin-left: -60px; 
+  
+  
+}
+.experience img{
+  width: 80%;
+
+} 
+
